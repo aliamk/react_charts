@@ -2,7 +2,7 @@ import React from "react";
 
 const MoreDeets = () => {
   return (
-    <div>
+    <div className="App">
       <h1>More Deets</h1>
     </div>
   );

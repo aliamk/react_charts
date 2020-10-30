@@ -5,7 +5,7 @@ import Features from "./component/Features";
 import MoreDeets from "./component/MoreDeets";
 import Navbar from "./component/Navbar";
 import Pricing from "./component/Pricing";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -18,13 +18,13 @@ const NavBar = () => {
             <Features />
           </Route>
           <Route path="/pricing" component={Pricing}>
-            <Pricing />
+            {/* <Pricing /> */}
           </Route>
           <Route path="/moredeets" component={MoreDeets}>
-            <MoreDeets />
+            {/* <MoreDeets /> */}
           </Route>
           <Route path="/dankmemes" component={DankMemes}>
-            <DankMemes />
+            {/* <DankMemes /> */}
           </Route>
         </Switch>
       </Router>
