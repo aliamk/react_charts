@@ -16,8 +16,8 @@ const Navbar = () => {
             <Link to="/features">
               <ReactBootStrap.Nav.Link href="#features">Features</ReactBootStrap.Nav.Link>
             </Link>
-            <Link to="/pricing">
-              <ReactBootStrap.Nav.Link href="#pricing">Pricing</ReactBootStrap.Nav.Link>
+            <Link to="/ChartJs_API_Data">
+              <ReactBootStrap.Nav.Link href="#ChartJs_API_Data">ChartJs_API_Data</ReactBootStrap.Nav.Link>
             </Link>
             <ReactBootStrap.NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>

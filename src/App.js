@@ -4,7 +4,7 @@ import DankMemes from "./component/DankMemes";
 import Features from "./component/Features";
 import MoreDeets from "./component/MoreDeets";
 import Navbar from "./component/Navbar";
-import Pricing from "./component/Pricing";
+import ChartJs_API_Data from "./component/ChartJs_API_Data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const NavBar = () => {
@@ -17,8 +17,8 @@ const NavBar = () => {
           <Route path="/features" component={Features}>
             <Features />
           </Route>
-          <Route path="/pricing" component={Pricing}>
-            {/* <Pricing /> */}
+          <Route path="/ChartJs_API_Data" component={ChartJs_API_Data}>
+            {/* <ChartJs_API_Data /> */}
           </Route>
           <Route path="/moredeets" component={MoreDeets}>
             {/* <MoreDeets /> */}
