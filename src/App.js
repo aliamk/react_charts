@@ -4,7 +4,7 @@ import DankMemes from "./component/DankMemes";
 import amCharts from "./component/amCharts";
 import Bar_Chart_3D from "./component/Bar_Chart_3D";
 import Navbar from "./component/Navbar";
-// import chartJS from "./component/chartJS";
+import ChartJS from "./component/chartJS";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const NavBar = () => {
@@ -16,6 +16,9 @@ const NavBar = () => {
         <Switch>
           <Route path="/amCharts" component={amCharts}>
             {/* <amCharts /> */}
+          </Route>
+          <Route path="/chartJS" component={ChartJS}>
+            {/* <chartJS /> */}
           </Route>
           <Route path="/Bar_Chart_3D" component={Bar_Chart_3D}>
             {/* <MoreDeets /> */}

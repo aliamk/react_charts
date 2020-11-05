@@ -8,13 +8,13 @@ const ChartJS = () => {
   return (
     <div>
       <h2>ChartJS</h2>
-      {/* <div className="grid">
+      <div className="grid">
           <div className="box box1">
-            <ChartJsAPIData />
+            {/* <ChartJsAPIData /> */}
           </div>
           <div className="box box2"></div>
       </div> 
-    */}
+   
     </div>
   );
 };
