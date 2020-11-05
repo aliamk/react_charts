@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import "./DankMemes.css";
 
-const ChartJs_API_Data = () => {
+const ChartJsAPIData = () => {
   // useState Hook
   const [chartData, setChartData] = useState({});
   const [employeeSalary, setEmployeeSalary] = useState([]);
@@ -14,6 +14,11 @@ const ChartJs_API_Data = () => {
     let employeeSalary = [];
     let employeeAge = [];
 
+    // console.log(employeeSalary, employeeAge);
+  };
+
+  // useEffect Hook
+  useEffect(() => {
     Axios.get("http://dummy.restapiexample.com/api/v1/employees")
       .then((response) => {
         // console.log(response);
@@ -36,14 +41,11 @@ const ChartJs_API_Data = () => {
       .catch((error) => {
         console.log(error);
       });
-    // console.log(employeeSalary, employeeAge);
-  };
 
-  // useEffect Hook
-  useEffect(() => {
     chart();
-  }, []);
+  });
 
+  
   return (
     <div className="App-chart">
       <h1 style={{ position: "absolute", top: "1em", marginTop: "1em" }}>Dynamic Data from API Request</h1>
@@ -77,7 +79,8 @@ const ChartJs_API_Data = () => {
         />
       </div>
     </div>
-  );
-};
+  )
 
-export default ChartJs_API_Data;
+}
+
+export default ChartJsAPIData;

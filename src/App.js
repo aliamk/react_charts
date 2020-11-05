@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import DankMemes from "./component/DankMemes";
-import Features from "./component/Features";
-import MoreDeets from "./component/MoreDeets";
+import amCharts from "./component/amCharts";
+import Bar_Chart_3D from "./component/Bar_Chart_3D";
 import Navbar from "./component/Navbar";
-import ChartJs_API_Data from "./component/ChartJs_API_Data";
+// import chartJS from "./component/chartJS";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const NavBar = () => {
@@ -14,13 +14,10 @@ const NavBar = () => {
         <Navbar />
         {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/features" component={Features}>
-            <Features />
+          <Route path="/amCharts" component={amCharts}>
+            {/* <amCharts /> */}
           </Route>
-          <Route path="/ChartJs_API_Data" component={ChartJs_API_Data}>
-            {/* <ChartJs_API_Data /> */}
-          </Route>
-          <Route path="/moredeets" component={MoreDeets}>
+          <Route path="/Bar_Chart_3D" component={Bar_Chart_3D}>
             {/* <MoreDeets /> */}
           </Route>
           <Route path="/dankmemes" component={DankMemes}>
