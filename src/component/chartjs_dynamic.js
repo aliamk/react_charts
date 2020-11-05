@@ -1,7 +1,7 @@
 import Axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
-import "./DankMemes.css";
+// import "./DankMemes.css";
 
 const ChartJsAPIData = () => {
   // useState Hook
@@ -45,7 +45,6 @@ const ChartJsAPIData = () => {
     chart();
   });
 
-  
   return (
     <div className="App-chart">
       <h1 style={{ position: "absolute", top: "1em", marginTop: "1em" }}>Dynamic Data from API Request</h1>
@@ -79,8 +78,7 @@ const ChartJsAPIData = () => {
         />
       </div>
     </div>
-  )
-
-}
+  );
+};
 
 export default ChartJsAPIData;

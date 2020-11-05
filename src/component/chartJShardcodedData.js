@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
-// import "./DankMemes.css";
+import "./hardcodedDataLineChart.css";
 
-const DankMemes = () => {
+const HardcodedDataLineChart = () => {
   // useState Hook
   const [chartData, setChartData] = useState({});
 
   // Initial State
   const chart = () => {
     setChartData({
-      labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       datasets: [
         {
           label: "level of thiccness",
-          data: [33, 45, 12, 76, 69],
+          data: [33, 45, 12, 76, 69, 54, 21],
           backgroundColor: ["rgba(75, 192, 192, 0.6)"],
           borderWidth: 4,
         },
@@ -29,7 +29,7 @@ const DankMemes = () => {
   // Render
   return (
     <div className="App-chart">
-      <h1 style={{ position: "absolute", top: "1em", marginTop: "1em" }}>More Dank Memes</h1>
+      <h1 style={{ position: "absolute", top: "1em", marginTop: "1em" }}>Hard-Coded Data</h1>
       <div style={{ minHeight: "30vh", height: "50vh", minWidth: "30vw", width: "50vw", marginTop: "10em" }}>
         <Line
           data={chartData}
@@ -64,4 +64,4 @@ const DankMemes = () => {
   );
 };
 
-export default DankMemes;
+export default HardcodedDataLineChart;
