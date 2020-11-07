@@ -19,11 +19,10 @@ const Navbar = () => {
             <Link to="/amCharts">
               <ReactBootStrap.Nav.Link href="#amCharts">AM Charts</ReactBootStrap.Nav.Link>
             </Link>
-
+            
             <Link to="/chartJS">
               <ReactBootStrap.Nav.Link href="#chartJS">ChartJs</ReactBootStrap.Nav.Link>
             </Link>
-            
             {/*<ReactBootStrap.NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>
               <ReactBootStrap.NavDropdown.Item href="#action/3.2">Another action</ReactBootStrap.NavDropdown.Item>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -9,27 +9,28 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import axios from "axios";
 
-const url = "https://randomuser.me/api/?results=100";
-
-export const fetchData = async () => {
-  try {
-    const response = await axios.get(url);
-
-    return response;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
   },
 });
 
-export default function BasicTable() {
+function BasicTable() {
+  const [rowData, setRowData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://randomuser.me/api/?results=100")
+      .then((response) => {
+        console.log("response", response);
+        setRowData(response.data.results);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   const classes = useStyles();
-  console.log();
   return (
     <div>
       <TableContainer component={Paper}>
@@ -43,8 +44,8 @@ export default function BasicTable() {
               <TableCell>Asset Tertiery Type</TableCell>
             </TableRow>
           </TableHead>
-          {/* <TableBody>
-            {modifiedData.map((row) => (
+          <TableBody>
+            {rowData.map((row) => (
               <TableRow key={row.id}>
                 <TableCell component="th" scope="row">
                   {row.location.street.name}
@@ -55,9 +56,11 @@ export default function BasicTable() {
                 <TableCell>{row.gender}</TableCell>
               </TableRow>
             ))}
-          </TableBody> */}
+          </TableBody>
         </Table>
       </TableContainer>
     </div>
   );
 }
+
+export default BasicTable;
