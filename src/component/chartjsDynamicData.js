@@ -43,11 +43,11 @@ const ChartJsAPIData = () => {
       });
 
     chart();
-  });
+  }, []);
 
   return (
     <div className="App-chart">
-      <h1 style={{ position: "absolute", top: "1em", marginTop: "1em" }}>Dynamic Data from API Request</h1>
+      <h1 style={{ position: "absolute", top: "1em", marginTop: "0.5em" }}>Dynamic Data from API Request</h1>
       <div style={{ minHeight: "30vh", height: "50vh", minWidth: "30vw", width: "50vw", marginTop: "10em" }}>
         <Line
           data={chartData}

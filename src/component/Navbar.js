@@ -7,18 +7,23 @@ const Navbar = () => {
   return (
     <div className="App">
       <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+
         <Link to="/home">
           <ReactBootStrap.Navbar.Brand href="#home">CHARTS</ReactBootStrap.Navbar.Brand>
         </Link>
+        
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
+            
             <Link to="/amCharts">
               <ReactBootStrap.Nav.Link href="#amCharts">AM Charts</ReactBootStrap.Nav.Link>
             </Link>
+
             <Link to="/chartJS">
               <ReactBootStrap.Nav.Link href="#chartJS">ChartJs</ReactBootStrap.Nav.Link>
             </Link>
+            
             {/*<ReactBootStrap.NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>
               <ReactBootStrap.NavDropdown.Item href="#action/3.2">Another action</ReactBootStrap.NavDropdown.Item>

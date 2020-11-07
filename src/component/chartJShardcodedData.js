@@ -35,7 +35,7 @@ const HardcodedDataLineChart = () => {
           data={chartData}
           options={{
             responsive: true,
-            title: { text: "THICCNESS SCALE", display: true },
+            title: { text: "Using React's useState and useEffect Hooks", display: true },
             scales: {
               yAxes: [
                 {
