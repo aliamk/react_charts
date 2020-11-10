@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Home from "./component/home";
 import DankMemes from "./component/DankMemes";
 import amCharts from "./component/amCharts";

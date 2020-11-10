@@ -7,41 +7,43 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import axios from "axios";
+import { fetchData } from "../api/index";
 
+// ===== STYLE COMPONENT ===== //
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
+
   },
 });
 
+// ===== API FETCH FROM API > INDEX.JS ===== //
 function BasicTable() {
   const [rowData, setRowData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://randomuser.me/api/?results=100")
-      .then((response) => {
-        console.log("response", response);
-        setRowData(response.data.results);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    (async () => {
+      const rowData = await fetchData();
+      //   console.log(response);
+      setRowData(rowData);
+    })();
   }, []);
 
+  // ===== STYLE COMPONENT ===== //
   const classes = useStyles();
+
+  // ===== RENDER DOM ===== //
   return (
     <div>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
-          <TableHead>
+          <TableHead style={{ backgroundColor: "purple" }}>
             <TableRow>
-              <TableCell>Asset</TableCell>
-              <TableCell>Acquisition Type</TableCell>
-              <TableCell>Transaction Value</TableCell>
-              <TableCell>Country</TableCell>
-              <TableCell>Asset Tertiery Type</TableCell>
+              <TableCell style={{ color: "white" }}>Asset</TableCell>
+              <TableCell style={{ color: "white" }}>Acquisition Type</TableCell>
+              <TableCell style={{ color: "white" }}>Transaction Value</TableCell>
+              <TableCell style={{ color: "white" }}>Country</TableCell>
+              <TableCell style={{ color: "white" }}>Asset Tertiery Type</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
