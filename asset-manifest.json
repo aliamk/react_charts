@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/aliamk.github.io/react_charts/static/css/main.4aaf7fc4.chunk.css",
+    "main.js": "/aliamk.github.io/react_charts/static/js/main.dcb00e73.chunk.js",
+    "main.js.map": "/aliamk.github.io/react_charts/static/js/main.dcb00e73.chunk.js.map",
+    "runtime-main.js": "/aliamk.github.io/react_charts/static/js/runtime-main.1cc76ad7.js",
+    "runtime-main.js.map": "/aliamk.github.io/react_charts/static/js/runtime-main.1cc76ad7.js.map",
+    "xlsx.js": "/aliamk.github.io/react_charts/static/js/xlsx.cec51d7b.chunk.js",
+    "xlsx.js.map": "/aliamk.github.io/react_charts/static/js/xlsx.cec51d7b.chunk.js.map",
+    "static/css/3.20aa2d7b.chunk.css": "/aliamk.github.io/react_charts/static/css/3.20aa2d7b.chunk.css",
+    "static/js/3.a9950d51.chunk.js": "/aliamk.github.io/react_charts/static/js/3.a9950d51.chunk.js",
+    "static/js/3.a9950d51.chunk.js.map": "/aliamk.github.io/react_charts/static/js/3.a9950d51.chunk.js.map",
+    "static/js/4.bd261e18.chunk.js": "/aliamk.github.io/react_charts/static/js/4.bd261e18.chunk.js",
+    "static/js/4.bd261e18.chunk.js.map": "/aliamk.github.io/react_charts/static/js/4.bd261e18.chunk.js.map",
+    "static/js/5.df372b44.chunk.js": "/aliamk.github.io/react_charts/static/js/5.df372b44.chunk.js",
+    "static/js/5.df372b44.chunk.js.map": "/aliamk.github.io/react_charts/static/js/5.df372b44.chunk.js.map",
+    "static/js/6.e3a36468.chunk.js": "/aliamk.github.io/react_charts/static/js/6.e3a36468.chunk.js",
+    "static/js/6.e3a36468.chunk.js.map": "/aliamk.github.io/react_charts/static/js/6.e3a36468.chunk.js.map",
+    "static/js/7.063083bf.chunk.js": "/aliamk.github.io/react_charts/static/js/7.063083bf.chunk.js",
+    "static/js/7.063083bf.chunk.js.map": "/aliamk.github.io/react_charts/static/js/7.063083bf.chunk.js.map",
+    "index.html": "/aliamk.github.io/react_charts/index.html",
+    "static/css/3.20aa2d7b.chunk.css.map": "/aliamk.github.io/react_charts/static/css/3.20aa2d7b.chunk.css.map",
+    "static/css/main.4aaf7fc4.chunk.css.map": "/aliamk.github.io/react_charts/static/css/main.4aaf7fc4.chunk.css.map",
+    "static/js/3.a9950d51.chunk.js.LICENSE.txt": "/aliamk.github.io/react_charts/static/js/3.a9950d51.chunk.js.LICENSE.txt",
+    "static/js/5.df372b44.chunk.js.LICENSE.txt": "/aliamk.github.io/react_charts/static/js/5.df372b44.chunk.js.LICENSE.txt",
+    "static/js/6.e3a36468.chunk.js.LICENSE.txt": "/aliamk.github.io/react_charts/static/js/6.e3a36468.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cc76ad7.js",
+    "static/css/3.20aa2d7b.chunk.css",
+    "static/js/3.a9950d51.chunk.js",
+    "static/css/main.4aaf7fc4.chunk.css",
+    "static/js/main.dcb00e73.chunk.js"
+  ]
+}
