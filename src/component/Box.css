@@ -39,12 +39,6 @@
     filter: brightness(1.12);
 }
 
-
-.container-inner {
-    
-
-}
-
 .chartdiv1, .chartdiv2, .chartdiv3, .chartdiv4, .chartdiv8  {
     width: auto;
     height: 30vh;    
