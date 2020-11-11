@@ -19,7 +19,7 @@ const ChartJsAPIData = () => {
 
   // useEffect Hook
   useEffect(() => {
-    Axios.get("http://dummy.restapiexample.com/api/v1/employees")
+    Axios.get("https://dummy.restapiexample.com/api/v1/employees")
       .then((response) => {
         // console.log(response);
         for (const dataObj of response.data.data) {
