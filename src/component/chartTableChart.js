@@ -10,7 +10,8 @@ const ChartTableChart = () => {
     am4core.useTheme(am4themes_animated);
     // Create chart instance
     let chart = am4core.create("chartdiv8", am4charts.PieChart3D);
-    chart.hiddenState.properties.opacity = 0.5; // this creates initial fade-in
+    // chart.hiddenState.properties.opacity = 0.75; // this creates initial fade-in
+    chart.hiddenState.properties.angle = 50;
     // Add data
     chart.data = [
       {
