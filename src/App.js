@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css"
-import Home from "./component/home";
+import Home from "./component/home"
+import ChartTable from "./component/ChartTable";
 import DonutChart from "./component/Donut";
 import amCharts from "./component/amCharts";
 import Bar_Chart_3D from "./component/Bar_Chart_3D";
@@ -16,8 +17,11 @@ class App extends React.Component {
           <Navbar />
           {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/home" component={Home}>
+            <Route path="/react_charts" component={Home}>
               {/* <home /> */}
+            </Route>
+            <Route path="/chart+table" component={ChartTable}>
+              {/* <chart+table /> */}
             </Route>
             <Route path="/amCharts" component={amCharts}>
               {/* <amCharts /> */}

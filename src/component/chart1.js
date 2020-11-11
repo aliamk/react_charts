@@ -11,8 +11,6 @@ const Chart1 = () => {
     // Create chart instance
     let chart = am4core.create("chartdiv1", am4charts.PieChart);
 
-
-
     // Add data
     chart.data = [
       {

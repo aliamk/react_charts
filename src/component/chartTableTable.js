@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 });
 
 // ===== API FETCH FROM API > INDEX.JS ===== //
-function BasicTable() {
+function ChartTableTable() {
   const [rowData, setRowData] = useState([]);
 
   useEffect(() => {
@@ -65,4 +65,4 @@ function BasicTable() {
   );
 }
 
-export default BasicTable;
+export default ChartTableTable;

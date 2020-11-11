@@ -3,12 +3,14 @@ import "./Box.css";
 import { fetchData } from "../api/index";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
+import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
-const HomeChart = () => {
+const ChartTableChart = () => {
   useLayoutEffect(() => {
+    am4core.useTheme(am4themes_animated);
     // Create chart instance
-    let chart = am4core.create("chartdiv8", am4charts.PieChart);
-
+    let chart = am4core.create("chartdiv8", am4charts.PieChart3D);
+    chart.hiddenState.properties.opacity = 0.5; // this creates initial fade-in
     // Add data
     chart.data = [
       {
@@ -53,7 +55,7 @@ const HomeChart = () => {
     // chart.legend = new am4charts.Legend();
 
     // Create pie series
-    let series = chart.series.push(new am4charts.PieSeries());
+    let series = chart.series.push(new am4charts.PieSeries3D());
     series.dataFields.value = "litres";
     series.dataFields.category = "country";
 
@@ -151,4 +153,4 @@ const HomeChart = () => {
   //   );
 };
 
-export default HomeChart;
+export default ChartTableChart;

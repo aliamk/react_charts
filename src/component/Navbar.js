@@ -8,13 +8,17 @@ const Navbar = () => {
     <div className="App">
       <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 
-        <Link to="/home">
-          <ReactBootStrap.Navbar.Brand href="#home">CHARTS</ReactBootStrap.Navbar.Brand>
+        <Link to="/react_charts">
+          <ReactBootStrap.Navbar.Brand href="#home">HOME</ReactBootStrap.Navbar.Brand>
         </Link>
         
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
+
+            <Link to="/chart+table">
+              <ReactBootStrap.Nav.Link href="#chart+table">Chart + Table</ReactBootStrap.Nav.Link>
+            </Link>
             
             <Link to="/amCharts">
               <ReactBootStrap.Nav.Link href="#amCharts">AM Charts</ReactBootStrap.Nav.Link>
