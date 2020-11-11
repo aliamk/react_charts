@@ -35,9 +35,9 @@ const Navbar = () => {
             <Link to="/Bar_Chart_3D">
               <ReactBootStrap.Nav.Link href="#deets">Bar Chart 3D</ReactBootStrap.Nav.Link>
             </Link>
-            <Link to="/dankmemes">
-              <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-                Timeline
+            <Link to="/donut">
+              <ReactBootStrap.Nav.Link eventKey={2} href="#donut">
+                Donut Chart
               </ReactBootStrap.Nav.Link>
             </Link>
           </ReactBootStrap.Nav>

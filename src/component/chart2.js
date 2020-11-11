@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
-import Box from "./Box.css";
+
 
 /* ===================== FLOWER CHART ===================== */
 const Chart2 = () => {

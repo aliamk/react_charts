@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css"
 import Home from "./component/home";
-import DankMemes from "./component/DankMemes";
+import DonutChart from "./component/Donut";
 import amCharts from "./component/amCharts";
 import Bar_Chart_3D from "./component/Bar_Chart_3D";
 import Navbar from "./component/Navbar";
@@ -28,8 +28,8 @@ class App extends React.Component {
             <Route path="/Bar_Chart_3D" component={Bar_Chart_3D}>
               {/* <MoreDeets /> */}
             </Route>
-            <Route path="/dankmemes" component={DankMemes}>
-              {/* <DankMemes /> */}
+            <Route path="/donut" component={DonutChart}>
+              {/* <donut /> */}
             </Route>
           </Switch>
         </Router>
