@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"
+import "./index.css"
 import Home from "./component/home"
 import ChartTable from "./component/ChartTable";
 import DonutChart from "./component/Donut";

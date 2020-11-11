@@ -1,30 +1,40 @@
 import React, { useLayoutEffect } from "react";
-import "./Box.css";
+import "./home.css";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import * as am4maps from "@amcharts/amcharts4/maps";
-import am4geodata_continentsLow from "@amcharts/amcharts4-geodata/continentsLow";
+import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 const Home = () => {
+
     useLayoutEffect(() => {
+
         am4core.addLicense("MP247079246");
-        am4core.useTheme(am4themes_animated);
-        // Themes end
+
+        am4core.useTheme(am4themes_animated);        
 
         // Create map instance
         let chart = am4core.create("chartdiv1", am4maps.MapChart);
 
         // Set map definition
-        chart.geodata = am4geodata_continentsLow;
+        chart.geodata = am4geodata_worldLow;
 
         // Set projection
         chart.projection = new am4maps.projections.Miller();
+        // chart.projection = new am4maps.projections.AzimuthalEqualArea()
+
+
 
         // Create map polygon series
         let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
-        polygonSeries.exclude = ["antarctica"];
+        // polygonSeries.exclude = ["antarctica"];
         polygonSeries.useGeodata = true;
+        let polygonTemplate = polygonSeries.mapPolygons.template;
+        polygonTemplate.tooltipText = "{name}";
+        polygonTemplate.fill = am4core.color("#DCDCDC");
+        let hs = polygonTemplate.states.create("hover");
+        hs.properties.fill = am4core.color("grey");
 
         // Create an image series that will hold pie charts
         let pieSeries = chart.series.push(new am4maps.MapImageSeries());
@@ -54,6 +64,8 @@ const Home = () => {
         pieSeriesTemplate.dataFields.value = "value";
         pieSeriesTemplate.labels.template.disabled = true;
         pieSeriesTemplate.ticks.template.disabled = true;
+
+        // polygonSeries.include = ["PT", "ES", "FR", "DE", "BE", "NL", "IT", "AT", "GB", "IE", "CH", "LU"];
 
         pieSeries.data = [{
             "title": "North America",
@@ -136,8 +148,8 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="container" style={{ display: "flex", justifyContent: "center" }}>
-            <div className="chartdiv1" style={{ height: "100vh", widht: "100%" }}></div>
+        <div className="container">
+            <div className="chartdiv1" style={{ height: "100vh", backgroundColor:"whitesmoke"}}></div>
         </div>
     );
 };
