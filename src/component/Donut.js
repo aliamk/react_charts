@@ -85,7 +85,7 @@ const DonutChart = () => {
 
   return (
     <div className="container">
-      <div className="chartdiv8" style={{ height: "80vh" }}></div>
+      <div className="chartdiv8" style={{ height: "100vh"}}></div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useEffect, useState } from "react";
 import "./Box.css";
-import { fetchData } from "../api/index";
+// import { fetchData } from "../api/index";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
@@ -10,8 +10,9 @@ const ChartTableChart = () => {
     am4core.useTheme(am4themes_animated);
     // Create chart instance
     let chart = am4core.create("chartdiv8", am4charts.PieChart3D);
-    // chart.hiddenState.properties.opacity = 0.75; // this creates initial fade-in
-    chart.hiddenState.properties.angle = -50;
+    chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+    chart.hiddenState.properties.angle = 90;
+    chart.rect = 100;
     // Add data
     chart.data = [
       {
@@ -68,7 +69,7 @@ const ChartTableChart = () => {
   }, []);
 
   return (
-    <div className="container-inner">
+    <div className="container-inner" style={{backgroundColor:"whitesmoke"}}>
       <div className="chartdiv8" style={{ height: "80vh" }}></div>
     </div>
   );
