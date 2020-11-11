@@ -7,6 +7,7 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 
 const Chart1 = () => {
   useLayoutEffect(() => {
+    am4core.addLicense("CH247079246");
     // Create chart instance
     let chart = am4core.create("chartdiv1", am4charts.PieChart);
 
