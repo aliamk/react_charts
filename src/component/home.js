@@ -136,7 +136,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="container">
+        <div className="container" style={{ display: "flex", justifyContent: "center" }}>
             <div className="chartdiv1" style={{ height: "100vh", widht: "100%" }}></div>
         </div>
     );
