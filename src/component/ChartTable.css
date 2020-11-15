@@ -1,16 +1,5 @@
-html {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-  }
-
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 0;
     background-color: whitesmoke;
@@ -25,4 +14,9 @@ header {
 h1 {
     margin: 0 auto;   
     align-items: center;
+}
+
+.chartdiv8 {
+  width: 100%;
+  height: 50vh; 
 }

@@ -15,11 +15,12 @@ class App extends React.Component {
       <div className="App">
         <Router>
           <Navbar />
-          {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
-          <Switch>
-            <Route path="/react_charts" component={Home}>
+          <Route path="/react_charts" component={Home}>
               {/* <home /> */}
             </Route>
+          {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
+          <Switch>
+
             <Route path="/chart+table" component={ChartTable}>
               {/* <chart+table /> */}
             </Route>

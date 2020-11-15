@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="App">
+
       <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 
-        <Link to="/react_charts">
-          <ReactBootStrap.Navbar.Brand href="#home">HOME</ReactBootStrap.Navbar.Brand>
-        </Link>
-        
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
+
+            <Link to="/react_charts">
+              <ReactBootStrap.Navbar.Brand href="#home">HOME</ReactBootStrap.Navbar.Brand>
+            </Link>        
 
             <Link to="/chart+table">
               <ReactBootStrap.Nav.Link href="#chart+table">Chart + Table</ReactBootStrap.Nav.Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
-    </div>
+
   );
 };
 

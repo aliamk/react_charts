@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useEffect, useState } from "react";
-import "./Box.css";
+import "./ChartTable.css";
 // import { fetchData } from "../api/index";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
@@ -12,7 +12,7 @@ const ChartTableChart = () => {
     let chart = am4core.create("chartdiv8", am4charts.PieChart3D);
     chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
     chart.hiddenState.properties.angle = 90;
-    chart.rect = 100;
+
     // Add data
     chart.data = [
       {
@@ -73,6 +73,12 @@ const ChartTableChart = () => {
       <div className="chartdiv8" style={{ height: "80vh" }}></div>
     </div>
   );
+};
+
+export default ChartTableChart;
+
+
+
 
   //   const [countryData, setCountryData] = useState([]);
   //   useEffect(() => {
@@ -153,6 +159,3 @@ const ChartTableChart = () => {
   //       <div className="chartdiv1"></div>
   //     </div>
   //   );
-};
-
-export default ChartTableChart;

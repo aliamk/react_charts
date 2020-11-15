@@ -64,6 +64,8 @@ const DonutChart = () => {
     pieSeries.innerRadius = am4core.percent(50);
     pieSeries.ticks.template.disabled = true;
     pieSeries.labels.template.disabled = true;
+    
+
 
     let rgm = new am4core.RadialGradientModifier();
     rgm.brightnesses.push(-0.8, -0.8, -0.5, 0, - 0.5);
@@ -85,7 +87,7 @@ const DonutChart = () => {
 
   return (
     <div className="container">
-      <div className="chartdiv8" style={{ height: "100vh"}}></div>
+      <div className="chartdiv8" style={{ height: "80vh"}}></div>
     </div>
   );
 };
