@@ -16,11 +16,8 @@ class App extends React.Component {
         <Router>
           <Navbar />
           <Route path="/react_charts" component={Home}>
-              {/* <home /> */}
-            </Route>
-          {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
+          </Route>          
           <Switch>
-
             <Route path="/chart+table" component={ChartTable}>
               {/* <chart+table /> */}
             </Route>

@@ -1,5 +1,7 @@
 import axios from "axios";
 
+// FETCHED DATA 
+
 const url = "https://randomuser.me/api/?results=100";
 
 export const fetchData = async () => {

@@ -15,7 +15,6 @@ const Home = () => {
         am4core.useTheme(am4themes_animated); 
 
         // Create map instance
-        am4core.addLicense("MP247079246");
         let chart = am4core.create("chartdiv", am4maps.MapChart);
         try {
             chart.geodata = am4geodata_worldHigh;
@@ -48,7 +47,7 @@ const Home = () => {
 
         // desaturate filter for countries
         let desaturateFilter = new am4core.DesaturateFilter();
-        desaturateFilter.saturation = 0.25;
+        desaturateFilter.saturation = 0.75;
         polygonTemplate.filters.push(desaturateFilter);
 
         // take a color from color set
@@ -58,7 +57,7 @@ const Home = () => {
 
         // set fillOpacity to 1 when hovered
         let hoverState = polygonTemplate.states.create("hover");
-        hoverState.properties.fillOpacity = 1;
+        hoverState.properties.fillOpacity = 0;
 
         // what to do when country is clicked
         polygonTemplate.events.on("hit", function (event) {
@@ -151,7 +150,7 @@ const Home = () => {
                 let polygon = polygonSeries.mapPolygons.getIndex(i);
                 if (polygon != exceptPolygon) {
                     polygon.defaultState.properties.fillOpacity = 0.5;
-                    polygon.animate([{ property: "fillOpacity", to: 0.5 }, { property: "strokeOpacity", to: 1 }], polygon.polygon.morpher.morphDuration);
+                    polygon.animate([{ property: "fillOpacity", to: 0.25 }, { property: "strokeOpacity", to: 1 }], polygon.polygon.morpher.morphDuration);
                 }
             }
         }
